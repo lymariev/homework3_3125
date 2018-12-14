@@ -24,20 +24,20 @@ def main():
             break
 
         while True:
-            but = str(input())
-            if but in ('a', 'A'):
+            button_char = str(input())
+            if button_char in ('a', 'A'):
                 game.move_left()
                 break
-            elif but in ('d', 'D'):
+            elif button_char in ('d', 'D'):
                 game.move_right()
                 break
-            elif but in ('w', 'W'):
+            elif button_char in ('w', 'W'):
                 game.move_up()
                 break
-            elif but in ('s', 'S'):
+            elif button_char in ('s', 'S'):
                 game.move_down()
                 break
-            elif but in ('q', 'Q'):
+            elif button_char in ('q', 'Q'):
                 exit()
 
         if game.check_empty() and game.field != old_field:
